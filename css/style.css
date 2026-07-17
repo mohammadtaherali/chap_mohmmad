@@ -172,19 +172,13 @@ color:#70d4ff;
 /* ---------- صفحه اول ---------- */
 
 .hero{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-position:relative;
-
-overflow:hidden;
-
+    min-height:100dvh;      /* یا 100svh */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding-top:120px;
 }
 
 /* ---------- ماه ---------- */
