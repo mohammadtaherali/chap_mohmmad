@@ -3112,3 +3112,24 @@ margin-top:15px;
 }
 
 }
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+*{
+    max-width:100%;
+    box-sizing:border-box;
+}
+.hero{
+    overflow:hidden;
+}
+
+.orbit{
+    display:none;
+}
+
+#shirtCursor{
+    display:none;
+}
