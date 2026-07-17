@@ -649,50 +649,48 @@ rotate(15deg);
 /* ---------- موبایل ---------- */
 
 
-@media(max-width:900px){
+@media (max-width:900px){
+
+.menu-toggle{
+display:block;
+font-size:32px;
+color:#fff;
+cursor:pointer;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
 
 nav ul{
-
 display:none;
-
+width:100%;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-top:20px;
+padding:20px 0;
 }
 
-
-.moon{
-
-width:280px;
-
-height:280px;
-
+nav ul.active{
+display:flex;
 }
 
-
-.title h1{
-
-font-size:40px;
-
+nav ul li{
+width:100%;
+text-align:center;
 }
 
-
-.glass-btn{
-
-width:120px;
-
-height:45px;
-
-font-size:14px;
-
+nav ul li a{
+display:block;
+padding:12px;
 }
 
-
-.orbit1,
-.orbit2,
-.orbit3,
-.orbit4,
-.orbit5{
-
-display:none;
-
+.admin-btn{
+margin-top:15px;
 }
 
 }
