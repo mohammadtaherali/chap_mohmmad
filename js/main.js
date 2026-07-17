@@ -303,3 +303,27 @@ console.log(navMenu.classList);
 });
 
 }
+
+const mobileBtn = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobileMenu");
+const mobileClose = document.querySelector(".mobileClose");
+
+if(mobileBtn && mobileMenu){
+
+mobileBtn.onclick = ()=>{
+
+mobileMenu.classList.add("active");
+
+};
+
+}
+
+if(mobileClose){
+
+mobileClose.onclick = ()=>{
+
+mobileMenu.classList.remove("active");
+
+};
+
+}

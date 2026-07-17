@@ -675,10 +675,6 @@ margin-top:20px;
 padding:20px 0;
 }
 
-nav ul.active{
-display:flex;
-}
-
 nav ul li{
 width:100%;
 text-align:center;
@@ -3087,25 +3083,12 @@ user-select:none;
 display:block;
 }
 
-nav{
-display:flex;
-align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
-}
-
 nav ul{
-display:none;
-width:100%;
-flex-direction:column;
-align-items:center;
-gap:18px;
-margin-top:20px;
+display:none !important;
 }
 
-nav ul.active{
-display:flex;
-}
+
+
 
 .admin-btn{
 margin-top:15px;
@@ -3156,4 +3139,48 @@ min-height:70vh;
 display:none;
 }
 
+}
+
+.mobileMenu{
+position:fixed;
+top:0;
+right:-100%;
+width:280px;
+height:100vh;
+background:#111827;
+display:flex;
+flex-direction:column;
+padding:80px 25px;
+gap:20px;
+transition:.35s;
+z-index:99999;
+box-shadow:-5px 0 20px rgba(0,0,0,.4);
+}
+
+.mobileMenu.active{
+right:0;
+}
+
+.mobileMenu a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+padding:12px;
+border-radius:10px;
+background:rgba(255,255,255,.06);
+}
+
+.mobileClose{
+position:absolute;
+top:20px;
+left:20px;
+font-size:28px;
+color:#fff;
+cursor:pointer;
+}
+
+@media(min-width:901px){
+.mobileMenu{
+display:none;
+}
 }
