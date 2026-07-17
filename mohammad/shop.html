@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>فروشگاه</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div id="shirtCursor"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+👕 خدمات چاپ محمد
+
+</div>
+
+<ul>
+
+<li><a href="index.html">خانه</a></li>
+
+<li><a href="products.html">محصولات</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="shop-page">
+
+<div class="shop-top">
+
+<h1>فروشگاه پوشاک</h1>
+
+<a href="favorites.html" class="glass-btn">
+
+❤️ علاقه‌مندی‌ها
+
+</a>
+
+<input
+type="text"
+id="searchProduct"
+placeholder="🔍 جستجوی محصول">
+
+<select id="sortProducts">
+
+<option value="default">مرتب سازی</option>
+
+<option value="cheap">ارزان ترین</option>
+
+<option value="expensive">گران ترین</option>
+
+</select>
+
+</div>
+
+<h1>فروشگاه پوشاک</h1>
+
+<input
+type="text"
+id="searchProduct"
+placeholder="🔍 جستجوی محصول..."
+class="search-box">
+
+<div class="filters">
+
+<button class="filter active" data-type="all">همه</button>
+
+<button class="filter" data-type="tshirt">تیشرت</button>
+
+<button class="filter" data-type="hoodie">هودی</button>
+
+<button class="filter" data-type="pants">شلوار</button>
+
+<button class="filter" data-type="work">لباس کار</button>
+
+</div>
+
+<div class="shop-grid" id="shopGrid">
+
+</div>
+
+<script src="js/cursor.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/shopProducts.js"></script>
+
+</body>
+
+</html>

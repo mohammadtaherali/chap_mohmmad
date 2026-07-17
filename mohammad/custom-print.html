@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>چاپ سفارشی</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="importmap">
+{
+  "imports":{
+    "three":"https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/":"https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module" src="js/viewer.js"></script>
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div id="shirtCursor"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+👕 خدمات چاپ محمد
+</div>
+
+<ul>
+
+<li><a href="index.html">خانه</a></li>
+
+<li><a href="products.html">محصولات</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="custom-page">
+
+<div id="viewer"></div>
+
+<div class="product-right">
+
+<h1>چاپ سفارشی</h1>
+
+<p class="price">شروع از ۳۲۰,۰۰۰ تومان</p>
+
+<h3>رنگ لباس</h3>
+
+<div class="colors">
+
+<span class="color white active" data-color="سفید" onclick="changeColor('#ffffff',this)"></span>
+
+<span class="color black" data-color="مشکی" onclick="changeColor('#222222',this)"></span>
+
+<span class="color navy" data-color="سرمه‌ای" onclick="changeColor('#1d3557',this)"></span>
+
+</div>
+
+<h3>آپلود طرح</h3>
+
+<input type="file" id="uploadLogo" accept="image/*">
+
+<h3>نوع لباس</h3>
+
+<select id="clothType">
+
+<option value="tshirt">تیشرت</option>
+
+<option value="hoodie">هودی</option>
+
+<option value="pants">شلوار</option>
+
+<option value="work">لباس کار</option>
+
+<option value="cap">کلاه</option>
+
+</select>
+
+<h2 id="livePrice">
+
+320,000 تومان
+
+</h2>
+
+<h3>نوع چاپ</h3>
+
+<select id="printType">
+
+<option value="dtf">DTF</option>
+
+<option value="uv">UV DTF</option>
+
+<option value="embroidery">گلدوزی</option>
+
+<option value="puffy">پفکی</option>
+
+<option value="stone">نگین چینی</option>
+
+</select>
+
+<h3>محل چاپ</h3>
+
+<select id="printPlace">
+
+<option>جلو</option>
+
+<option>پشت</option>
+
+<option>جلو و پشت</option>
+
+<option>آستین</option>
+
+</select>
+
+<h3>توضیحات سفارش</h3>
+
+<textarea id="description"
+placeholder="توضیحات سفارش..."></textarea>
+
+<h3>سایز</h3>
+
+<select id="size">
+
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+
+</select>
+
+<h3>تعداد</h3>
+
+<input type="number" id="count" value="1" min="1">
+
+<button id="orderBtn" class="glass-btn buy">
+
+ثبت سفارش
+
+</button>
+
+</div>
+
+</section>
+
+<script src="js/cursor.js"></script>
+
+<div id="orderPopup" class="popup">
+
+<div class="popup-box">
+
+<h2>
+
+روش ارسال سفارش
+
+</h2>
+
+<button id="whatsappBtn" class="glass-btn">
+
+🟢 واتساپ
+
+</button>
+
+<button id="rubikaBtn" class="glass-btn">
+
+🔵 روبیکا
+
+</button>
+
+</div>
+
+</div>
+
+<div id="shirtCursor"></div>
+
+<script src="js/cursor.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>پنل مدیریت</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div id="shirtCursor"></div>    
+
+<div id="stars"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+👑 پنل مدیریت
+</div>
+
+<ul>
+
+<li><a href="index.html">خانه</a></li>
+
+<li><a href="shop.html">فروشگاه</a></li>
+
+<li><a href="#" id="logout">
+خروج
+</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="admin-page">
+
+<h1>مدیریت محصولات</h1>
+
+<div class="admin-form">
+
+<input id="pName" type="text" placeholder="نام محصول">
+
+<input id="pPrice" type="number" placeholder="قیمت">
+
+<input id="pImage" type="text" placeholder="آدرس عکس">
+
+<select id="pCategory">
+
+<option value="tshirt">تیشرت</option>
+
+<option value="work">لباس کار</option>
+
+<option value="3d">چاپ سه بعدی</option>
+
+</select>
+
+<button id="saveProduct" class="glass-btn">
+➕ افزودن محصول
+</button>
+
+</div>
+
+<hr>
+
+<div id="productsTable">
+
+</div>
+
+</section>
+
+<script src="js/cursor.js"></script>
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

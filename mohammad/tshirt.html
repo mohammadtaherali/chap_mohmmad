@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>تیشرت چاپ DTF</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<script type="importmap">
+{
+"imports":{
+"three":"https://unpkg.com/three@0.165.0/build/three.module.js",
+"three/addons/":"https://unpkg.com/three@0.165.0/examples/jsm/"
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<div id="shirtCursor"></div>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+👕 خدمات چاپ محمد
+
+</div>
+
+<ul>
+
+<li><a href="index.html">خانه</a></li>
+
+<li><a href="shop.html">فروشگاه</a></li>
+
+<li><a href="products.html">چاپ اختصاصی</a></li>
+
+<li><a href="cart.html">🛒 سبد خرید</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="breadcrumb">
+
+<a href="index.html">خانه</a>
+
+>
+
+<a href="shop.html">فروشگاه</a>
+
+>
+
+<span>تیشرت پنبه‌ای</span>
+
+</section>
+
+<section class="product-page">
+
+<div class="product-left">
+
+<div class="gallery-box">
+
+<img
+id="mainImage"
+src="assets/images/tshirt-front.png"
+>
+
+<div class="thumbs">
+
+<img
+class="thumb active"
+src="assets/images/tshirt-front.png"
+>
+
+<img
+class="thumb"
+src="assets/images/tshirt-back.png"
+>
+
+<img
+class="thumb"
+src="assets/images/tshirt-side.png"
+>
+
+</div>
+
+</div>
+
+<div id="viewer"></div>
+
+<script type="module" src="js/viewer.js"></script>
+
+</div>
+
+<div class="product-right">
+
+<h1 id="productName">تیشرت پنبه Premium</h1>
+
+<div class="rate">
+⭐⭐⭐⭐⭐
+<span>4.9</span>
+</div>
+
+<p class="stock">✅ موجود در انبار</p>
+
+<div class="priceBox">
+<h2>قیمت</h2>
+<h1 id="finalPrice">320,000 تومان</h1>
+</div>
+
+<h3>رنگ</h3>
+
+<div class="colors">
+
+<span class="color white active"
+data-color="سفید"
+onclick="changeColor('#ffffff',this)">
+</span>
+
+<span class="color black"
+data-color="مشکی"
+onclick="changeColor('#222222',this)">
+</span>
+
+<span class="color navy"
+data-color="سرمه‌ای"
+onclick="changeColor('#1e3a8a',this)">
+</span>
+
+</div>
+
+<h3>سایز</h3>
+
+<select id="size">
+
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+
+</select>
+
+<h3>تعداد</h3>
+
+<input
+type="number"
+id="count"
+value="1"
+min="1">
+
+<h3>آپلود طرح</h3>
+
+<input
+type="file"
+id="uploadLogo"
+accept="image/*">
+
+<img
+id="logoPreview"
+style="display:none;width:220px;margin-top:20px;border-radius:15px;">
+
+<h3>نام و نام خانوادگی</h3>
+
+<input
+type="text"
+id="customerName"
+placeholder="نام و نام خانوادگی">
+
+<h3>شماره موبایل</h3>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="09*********">
+
+<h3>توضیحات سفارش</h3>
+
+<textarea
+id="description"
+rows="4"
+placeholder="توضیحات سفارش..."></textarea>
+
+<h3>ارسال سفارش</h3>
+
+
+
+<div class="buttons">
+
+<button id="addCart" class="glass-btn">
+🛒 افزودن به سبد خرید
+</button>
+
+<button id="orderBtn" class="glass-btn buy">
+🟢 ثبت سفارش واتساپ
+</button>
+
+<a href="tel:09196753590" class="glass-btn">
+📞 تماس مستقیم
+</a>
+
+<a href="https://rubika.ir/chapkater_mohammad"
+target="_blank"
+class="glass-btn">
+🟣 روبیکا
+</a>
+
+</div>
+
+<section class="product-details">
+
+<h2>مشخصات محصول</h2>
+
+<table class="specs">
+
+<tr>
+
+<td>جنس</td>
+
+<td>پنبه ۱۰۰٪</td>
+
+</tr>
+
+<tr>
+
+<td>نوع چاپ</td>
+
+<td>DTF</td>
+
+</tr>
+
+<tr>
+
+<td>کیفیت چاپ</td>
+
+<td>بسیار بالا</td>
+
+</tr>
+
+<tr>
+
+<td>قابل شستشو</td>
+
+<td>✅ بله</td>
+
+</tr>
+
+<tr>
+
+<td>مناسب</td>
+
+<td>زنانه و مردانه</td>
+
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="size-guide">
+
+<h2>جدول سایزبندی</h2>
+
+<table class="size-table">
+
+<tr>
+
+<th>سایز</th>
+
+<th>عرض سینه</th>
+
+<th>قد لباس</th>
+
+</tr>
+
+<tr>
+
+<td>S</td>
+
+<td>48 cm</td>
+
+<td>68 cm</td>
+
+</tr>
+
+<tr>
+
+<td>M</td>
+
+<td>51 cm</td>
+
+<td>70 cm</td>
+
+</tr>
+
+<tr>
+
+<td>L</td>
+
+<td>54 cm</td>
+
+<td>72 cm</td>
+
+</tr>
+
+<tr>
+
+<td>XL</td>
+
+<td>57 cm</td>
+
+<td>74 cm</td>
+
+</tr>
+
+<tr>
+
+<td>XXL</td>
+
+<td>60 cm</td>
+
+<td>76 cm</td>
+
+</tr>
+
+</table>
+
+<p class="size-note">
+
+📏 اندازه‌ها تقریبی هستند و ممکن است ۱ تا ۲ سانتی‌متر اختلاف داشته باشند.
+
+</p>
+
+</section>
+
+
+<section class="features">
+
+<div class="feature">
+
+🚚
+
+<h3>ارسال سریع</h3>
+
+<p>ارسال به سراسر ایران</p>
+
+</div>
+
+<div class="feature">
+
+🛡️
+
+<h3>ضمانت کیفیت</h3>
+
+<p>چاپ با ماندگاری بالا</p>
+
+</div>
+
+<div class="feature">
+
+🎨
+
+<h3>چاپ اختصاصی</h3>
+
+<p>طبق فایل شما</p>
+
+</div>
+
+<div class="feature">
+
+💬
+
+<h3>پشتیبانی</h3>
+
+<p>واتساپ و روبیکا</p>
+
+</div>
+
+</section>
+
+
+<section class="related">
+
+<h2>محصولات مشابه</h2>
+
+<div class="related-grid">
+
+<div class="shop-card">
+
+<img src="assets/images/hoodie-front.png">
+
+<h3>هودی</h3>
+
+<a href="hoodie.html" class="glass-btn">
+
+مشاهده
+
+</a>
+
+</div>
+
+<div class="shop-card">
+
+<img src="assets/images/pants-front.png">
+
+<h3>شلوار</h3>
+
+<a href="pants.html" class="glass-btn">
+
+مشاهده
+
+</a>
+
+</div>
+
+<div class="shop-card">
+
+<img src="assets/images/workwear-front.png">
+
+<h3>لباس کار</h3>
+
+<a href="workwear.html" class="glass-btn">
+
+مشاهده
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="reviews">
+
+<h2>نظرات کاربران</h2>
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+کیفیت چاپ فوق‌العاده بود.
+
+</p>
+
+</div>
+
+<div class="review">
+
+⭐⭐⭐⭐
+
+<p>
+
+ارسال سریع و کیفیت عالی.
+
+</p>
+
+</div>
+
+</section>
+
+<script src="js/cursor.js"></script>
+<script src="js/tshirt.js"></script>
+<script src="js/order.js"></script>
+
+</body>
+
+</html>
