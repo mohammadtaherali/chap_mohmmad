@@ -3074,3 +3074,43 @@ nav{
 }
 
 }
+
+.menu-toggle{
+display:none;
+font-size:32px;
+color:#fff;
+cursor:pointer;
+user-select:none;
+}
+
+@media (max-width:900px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+nav ul{
+display:none;
+width:100%;
+flex-direction:column;
+align-items:center;
+gap:18px;
+margin-top:20px;
+}
+
+nav ul.active{
+display:flex;
+}
+
+.admin-btn{
+margin-top:15px;
+}
+
+}
