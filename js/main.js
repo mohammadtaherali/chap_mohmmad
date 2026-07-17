@@ -276,7 +276,11 @@ if(menuToggle && navMenu){
 
 menuToggle.addEventListener("click",()=>{
 
+console.log("clicked");
+
 navMenu.classList.toggle("active");
+
+console.log(navMenu.classList);
 
 });
 
