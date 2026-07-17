@@ -287,22 +287,6 @@ badge.innerHTML=cart.length;
 
 }
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector("nav ul");
-
-if(menuToggle && navMenu){
-
-menuToggle.addEventListener("click",()=>{
-
-console.log("clicked");
-
-navMenu.classList.toggle("active");
-
-console.log(navMenu.classList);
-
-});
-
-}
 
 const mobileBtn = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobileMenu");
