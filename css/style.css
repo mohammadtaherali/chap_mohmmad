@@ -265,7 +265,7 @@ transform:translateY(-18px);
 
 .title h1{
 
-font-size:clamp(38px,7vw,65px);
+font-size:clamp(36px,8vw,65px);
 
 margin-bottom:15px;
 
@@ -2999,5 +2999,78 @@ margin-top:25px;
 text-align:center;
 
 text-decoration:none;
+
+}
+@media (max-width:768px){
+
+.orbit1{
+    transform:translate(-50%,-50%) rotate(0deg) translateY(-180px);
+}
+
+.orbit2{
+    transform:translate(-50%,-50%) rotate(72deg) translateY(-180px);
+}
+
+.orbit3{
+    transform:translate(-50%,-50%) rotate(144deg) translateY(-180px);
+}
+
+.orbit4{
+    transform:translate(-50%,-50%) rotate(216deg) translateY(-180px);
+}
+
+.orbit5{
+    transform:translate(-50%,-50%) rotate(288deg) translateY(-180px);
+}
+
+}
+
+@media (max-width:768px){
+
+.glass-btn{
+    width:110px;
+    height:44px;
+    font-size:14px;
+}
+
+}
+@media (max-width:768px){
+
+.moon{
+    width:250px;
+    height:250px;
+}
+
+}
+@media (max-width:768px){
+
+header{
+    padding:15px 18px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.logo img{
+    width:42px;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+.admin-btn{
+    width:100%;
+    text-align:center;
+}
 
 }
