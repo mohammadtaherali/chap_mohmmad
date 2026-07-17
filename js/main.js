@@ -1,6 +1,9 @@
-// js/main.js
 
+// js/main.js
+const isMobile = window.innerWidth <= 900;
 const cursor = document.getElementById("shirtCursor");
+
+if(!isMobile){
 
 document.addEventListener("mousemove",(e)=>{
 
@@ -8,6 +11,8 @@ cursor.style.left=e.clientX+"px";
 cursor.style.top=e.clientY+"px";
 
 });
+
+}
 
 
 document.querySelectorAll("a,.glass-btn,.service-card,.contact-item,.gallery img").forEach(item=>{
@@ -33,6 +38,8 @@ cursor.classList.remove("active");
 
 const moon=document.querySelector(".moon");
 
+if(!isMobile){
+
 document.addEventListener("mousemove",(e)=>{
 
 const x=(window.innerWidth/2-e.clientX)/35;
@@ -43,6 +50,7 @@ moon.style.transform=`translate(${x}px,${y}px)`;
 
 });
 
+}
 
 
 
@@ -82,20 +90,28 @@ observer.observe(el);
 
 // پارالاکس ستاره ها
 
+if(!isMobile){
+
 document.addEventListener("mousemove",(e)=>{
 
 const stars=document.getElementById("stars");
 
-stars.style.backgroundPosition=
+if(stars){
 
+stars.style.backgroundPosition=
 `${e.clientX/80}px ${e.clientY/80}px`;
+
+}
 
 });
 
+}
 
 
 
 // چرخش آرام ماه
+
+if(!isMobile){
 
 let deg=0;
 
@@ -106,6 +122,8 @@ deg+=0.08;
 moon.style.rotate=deg+"deg";
 
 },20);
+
+}
 
 
 
