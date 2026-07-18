@@ -230,18 +230,17 @@ changeColor("#1d4ed8");
 
 });
 
-const size=document.getElementById("size");
+const size = document.getElementById("size");
+const count = document.getElementById("count");
+const price = document.querySelector(".price");
 
-const count=document.getElementById("count");
-
-const price=document.querySelector(".price");
+if(size && count && price){
 
 function updatePrice(){
 
-let p=320000;
+let p = 320000;
 
 if(size.value=="XL") p+=30000;
-
 if(size.value=="XXL") p+=50000;
 
 p*=Number(count.value);
@@ -250,11 +249,12 @@ price.innerHTML=p.toLocaleString()+" تومان";
 
 }
 
-size.onchange=updatePrice;
-
-count.oninput=updatePrice;
+size.onchange = updatePrice;
+count.oninput = updatePrice;
 
 updatePrice();
+
+}
 
 
 const upload=document.getElementById("uploadLogo");
