@@ -403,13 +403,10 @@ margin-bottom:60px;
 .services-grid{
 
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 
 }
-
 
 .service-card{
 
@@ -479,10 +476,8 @@ padding:120px 8%;
 .gallery-grid{
 
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
 
 }
 
@@ -607,7 +602,7 @@ margin-bottom:15px;
 
 body{
 
-cursor:none;
+cursor:auto;
 
 }
 
@@ -1238,7 +1233,7 @@ transform:scale(1.08);
 }
 
 body{
-    cursor:none;
+    cursor:auto;
 }
 
 #shirtCursor{
@@ -3183,4 +3178,86 @@ cursor:pointer;
 .mobileMenu{
 display:none;
 }
+}
+
+html,body{
+overflow-x:hidden !important;
+width:100%;
+cursor:auto !important;
+}
+
+*{
+cursor:auto !important;
+box-sizing:border-box;
+}
+
+@media(max-width:900px){
+
+#stars,
+#moonGlow,
+.shooting,
+.orbit,
+#shirtCursor{
+display:none !important;
+}
+
+.hero{
+min-height:70vh;
+padding:30px 15px;
+overflow:hidden;
+}
+
+nav ul{
+display:none !important;
+}
+
+.logo span{
+font-size:18px;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:9999;
+}
+
+body{
+padding-top:80px;
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+}
+
+@media (max-width:900px){
+
+body{
+overflow-x:hidden;
+}
+
+nav ul{
+display:none !important;
+}
+
+.orbit,
+#stars,
+#moonGlow,
+.shooting,
+#shirtCursor{
+display:none !important;
+}
+
+.hero{
+min-height:75vh;
+padding:25px 15px;
+}
+
+.mobileMenu{
+display:flex;
+}
+
 }

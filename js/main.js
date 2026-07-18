@@ -311,4 +311,33 @@ mobileMenu.classList.remove("active");
 };
 
 }
-console.log("MENU JS LOADED");
+console.log("MENU JS LOADED");پ
+
+const mobileLinks = document.querySelectorAll(".mobileMenu a");
+
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+});
+
+document.querySelectorAll(".mobileMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".mobileMenu").classList.remove("active");
+    });
+});
+
+document.querySelectorAll(".mobileMenu a").forEach(link=>{
+
+link.onclick=()=>{
+
+mobileMenu.classList.remove("active");
+
+}
+
+});
+document.querySelectorAll(".mobileMenu a").forEach(link=>{
+link.onclick=()=>{
+mobileMenu.classList.remove("active");
+};
+});
