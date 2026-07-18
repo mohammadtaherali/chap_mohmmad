@@ -311,3 +311,4 @@ mobileMenu.classList.remove("active");
 };
 
 }
+console.log("MENU JS LOADED");
